@@ -1,7 +1,5 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+    <p>&copy; <?php echo date('Y'); ?> Designed and developed by Jordan Keen</p>
 </footer>
 
 <script>

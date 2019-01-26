@@ -1,5 +1,11 @@
 $(function(){
 
-	console.log("It's working");
+
+
+	$('.menu-button').on('click', function() {
+		$(this).toggleClass('active');
+		$('nav').toggleClass('open');
+	});
+
 
 });

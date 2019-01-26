@@ -1,0 +1,174 @@
+
+.projects-page {
+	padding: 6vw 15px 90px;
+	.portfolio-item-container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin: 0 auto 60px;
+		align-items: center;
+		.portfolio-image {
+			width: 50%;
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+	.portfolio-item-container:last-child {
+		margin-bottom: 0;
+	}
+	.portfolio-content {
+		width: 45%;
+		text-align: right;
+		font-family: $roboto;
+		h3 {
+			margin: 0 7px 0 0;
+			margin-right: 10px;
+		    font-size: 27px;
+		    font-weight: 700;
+		    display: inline-block;
+		    padding: 7px 16px;
+		    box-shadow: 7px -7px $white;
+		    border: 2px solid $white;
+		    font-family: $poppins;
+		}
+		p {
+			font-size: 13px;
+			letter-spacing: 1px;
+			margin: 20px 0;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 0;
+			margin: 15px 0;
+			justify-content: flex-end;
+		}
+		li {
+			list-style-type: none;
+			border: 2px solid $white;
+			color: white;
+			margin: 4px;
+			padding: 5px 7px;
+			font-size: 12px;
+			letter-spacing: 1px;
+		}
+		li:last-child {
+			margin-right: 0;
+		}
+	}
+	.view-live {
+		font-family: $poppins;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 2px;
+		border-bottom: 2px solid $white;
+		padding-bottom: 2px;
+	}
+	// Skills CSS
+	.skills {
+		width: 100%;
+		.skill-container {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+	.skill-item {
+		text-align: center;
+		padding: 10px;
+		width: 20%;
+	}
+
+
+	@media screen and (max-width: 780px) {
+		.portfolio-item-container {
+			flex-direction: column-reverse;
+			.portfolio-image {
+				width: 80%;
+				align-self: center;
+			}
+			.portfolio-content {
+				width: 80%;
+				margin-top: 30px;
+				text-align: left;
+				display: flex;
+				flex-wrap: wrap;
+				align-self: center;
+				align-items: center;
+				justify-content: space-around;
+				h4 {
+					margin: 0 auto;
+					text-align: center;
+					width: 100%;
+				}
+				p:nth-child(2) {
+					// text-align: center;
+				}
+				p {
+					width: 100%;
+				}
+				ul {
+					justify-content: flex-start;
+					width: 65%;
+				}
+				.view-live {
+					width: 30%;
+					margin: 0 auto;
+					text-align: center;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 593px) {
+		.portfolio-item-container {
+			padding-right: 10px;
+			.portfolio-image {
+				width: 100%;
+			}
+			.portfolio-content {
+				width: 100%;
+				ul {
+					width: 100%;
+				}
+				.view-live {
+					width: 50%;
+				}
+			}
+		}
+		.skill-item {
+			width: 25%;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.portfolio-item-container {
+			.portfolio-content {
+				display: block;
+				h4 {
+					font-size: 21px;
+				}
+				p {
+					font-size: 12px;
+				}
+				li {
+					font-size: 10px;
+				}
+			}
+		}
+		.skills {
+			.skill-container {
+				justify-content: flex-start;
+				.skill-item {
+					width: 33.3%;
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+}

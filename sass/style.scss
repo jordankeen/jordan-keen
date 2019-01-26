@@ -8,39 +8,40 @@
 */
 
 @import 'normalize';
-@import 'typography';
-@import 'navigation';
-@import 'sidebar';
-@import 'comments';
+@import 'variables';
+@import 'home';
+@import 'header';
+@import 'projects';
 @import 'footer';
-/*
-====================================
-Default Styling
-====================================
-*/
+
 
 img {
 	max-width: 100%;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
 }
 
 body {
-	color: #333;
+	color: $white;
+	background: $black;
 }
-
 .container {
-	max-width: 1200px;
+	max-width: 1140px;
 	margin: 0 auto;
 }
+.page-title {
+	font-family: $poppins;
+	font-size: 37px;
+	letter-spacing: 3px;
+}
+@media screen and (max-width: 991px) {
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+
 }
 
-.full {
-	width: 100%;
-}
 
 
 

@@ -1,0 +1,78 @@
+
+header {
+	position: relative;
+	nav {
+		position: fixed;
+	    background-color: white; 
+	    width: 320px;
+	    bottom: 0;
+	    top: 0;
+	    right: -320px;
+	    padding: 105px 35px 0;
+	    transition: all 0.35s ease-in-out;
+	    &.open {
+	    	right: 0;
+	    	background-color: #e25353;
+	    }
+	}
+	.menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		a {
+			color: $white;
+			font-family: $poppins;
+			font-weight: 700;
+			font-size: 32px;
+			display: block;
+			width: 100%;
+			padding: 12px 0;
+			border-bottom: 4px solid $white;
+		}
+	}
+	.menu-button {
+		position: fixed;
+		z-index: 2;
+		top: 30px;
+		right: 35px;
+		display: block;
+		cursor: pointer;
+		width: 27px;
+		height: 23px;
+		span {
+			display: block;
+			background: $white;
+			width: 27px;
+			height: 3px;
+			-webkit-transition: .35s margin .35s, .35s transform;
+			-moz-transition: .35s margin .35s, .35s transform;
+			transition: .35s margin .35s, .35s transform;
+		}
+		span:nth-child(1) { margin-bottom: 6px; }
+		span:nth-child(3) { margin-top: 6px; }
+		&.active {
+			position: fixed;
+			// top: 16.5px;
+			// right: 15px;
+			z-index: 3;
+			span {
+				-webkit-transition: .35s margin, .35s transform .35s;
+				-moz-transition: .35s margin, .35s transform .35s;
+				transition: .35s margin, .35s transform .35s;
+			}
+			span:nth-child(1) {
+				margin-top: 8px;
+				margin-bottom: -3px;
+			}
+			
+			span:nth-child(1), span:nth-child(2) {
+				transform: rotate(45deg);
+			}
+			
+			span:nth-child(3) {
+				margin-top: -3px;
+				transform: rotate(135deg);
+			}
+		}
+	}
+}
