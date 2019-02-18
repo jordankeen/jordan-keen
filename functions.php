@@ -50,7 +50,7 @@ of writing our own link tags in the header. */
 function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
-	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 	wp_enqueue_style('Poppins', 'https://fonts.googleapis.com/css?family=Poppins:700');
 	wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css?family=Roboto');
 }
