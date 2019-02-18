@@ -1,0 +1,43 @@
+
+.about-page {
+	min-height: 100vh;
+	.social-list {
+		padding: 0;
+		margin: 0 0 30px;
+		list-style-type: none;
+		display: flex;
+		li {
+			margin-right: 5px;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+			font-size: 19px;
+			padding: 3px 5px;
+		}
+	}
+	.email-contact {
+		font-weight: 600;
+		font-family: $poppins;
+		letter-spacing: 1px;
+		margin: 0 0 30px;
+		font-size: 20px;
+		display: inline-block;
+	}
+	.about-subtitle {
+		font-weight: 600;
+		font-family: $poppins;
+		letter-spacing: 1px;
+		font-size: 20px;
+		margin: 0 0 11px;
+	}
+	.about-copy {
+		font-weight: 400;
+		font-family: $poppins;
+		font-style: italic;
+		letter-spacing: 1px;
+		max-width: 690px;
+		font-size: 15px;
+		margin: 0 0 30px;
+	}
+}

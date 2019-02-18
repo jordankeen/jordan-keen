@@ -3,7 +3,7 @@ header {
 	position: relative;
 	nav {
 		position: fixed;
-		z-index: 99;
+		z-index: 2;
 	    background-color: $black; 
 	    width: 320px;
 	    bottom: 0;
@@ -33,7 +33,7 @@ header {
 	}
 	.menu-button {
 		position: fixed;
-		z-index: 2;
+		z-index: 3;
 		top: 30px;
 		right: 35px;
 		display: block;
@@ -55,7 +55,7 @@ header {
 			position: fixed;
 			// top: 16.5px;
 			// right: 15px;
-			z-index: 3;
+			// z-index: 3;
 			span {
 				-webkit-transition: .35s margin, .35s transform .35s;
 				-moz-transition: .35s margin, .35s transform .35s;

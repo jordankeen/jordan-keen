@@ -1,6 +1,5 @@
 
 .projects-page {
-	padding: 6vw 15px 90px;
 	.portfolio-item-container {
 		display: flex;
 		flex-direction: row-reverse;
@@ -25,10 +24,10 @@
 		h3 {
 			margin: 0 7px 0 0;
 			margin-right: 10px;
-		    font-size: 27px;
+		    font-size: 30px;
 		    font-weight: 700;
 		    display: inline-block;
-		    padding: 7px 16px;
+		    padding: 10px 26px;
 		    box-shadow: 7px -7px $white;
 		    border: 2px solid $white;
 		    font-family: $poppins;

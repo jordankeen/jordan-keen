@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-	<div class="projects-page">
+	<div class="projects-page page-style">
 		<div class="container">
 			<h2 class="page-title">recent projects</h2>
 			<div class="projects-wrapper">
