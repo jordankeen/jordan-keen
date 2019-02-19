@@ -76,4 +76,18 @@ header {
 			}
 		}
 	}
+	@media screen and (max-width: 767px) {
+		nav {
+			padding: 75px 20px 0;
+			width: 290px;
+		}
+		.menu-button {
+			top: 20px;
+			right: 18px;
+		}
+		.menu a {
+			font-size: 22px;
+			padding: 10px 0;
+		}
+	}
 }

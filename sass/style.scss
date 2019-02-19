@@ -15,7 +15,6 @@
 @import 'footer';
 @import 'about';
 
-
 img {
 	max-width: 100%;
 	width: 100%;
@@ -24,7 +23,6 @@ a {
 	text-decoration: none;
 	color: white;
 }
-
 body {
 	color: $white;
 	background: $black;
@@ -34,7 +32,7 @@ body {
 	background-attachment: fixed;
 }
 .page-style {
-	padding: 6vw 15px 90px;
+	padding: 6vw 15px;
 }
 .container {
 	max-width: 1140px;
@@ -53,20 +51,36 @@ body {
 	    height: 4px;
 	    background: #fff;
 	    position: absolute;
-	    bottom: -14px;
+	    bottom: -10px;
 	    left: -2%;
 	}
 }
 @media screen and (max-width: 991px) {
-
-
+	.page-style {
+		padding: 70px 15px;
+	}
 }
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 767px) {
+	.page-title {
+		font-size: 34px;
+		margin-left: 4%;
+		&:before {
+			width: 16%;
+			left: -4%;
+		}
+	}
+}
+@media screen and (max-width: 479px) {
+	.page-style {
+		padding: 60px 15px;
+	}
+	.page-title {
+		font-size: 24px;
+		letter-spacing: 1px;
+		margin-left: 18px;
+		&:before {
+			width: 80px;
+			left: -18px;
+		}
+	}
+}

@@ -40,4 +40,18 @@
 		font-size: 15px;
 		margin: 0 0 30px;
 	}
+	@media screen and (max-width: 767px) {
+		.email-contact {
+			margin-bottom: 20px;
+		}
+		.email-contact,
+		.about-subtitle {
+			font-size: 17px;
+			letter-spacing: 0;
+		}
+		.about-copy {
+			font-size: 13px;
+			margin-bottom: 20px;
+		}
+	}
 }
