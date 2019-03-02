@@ -23,10 +23,18 @@ get_header();
 					);
 				$project_Query = new WP_Query($projects_Args);
 				if( $project_Query->have_posts() ) {
+					// aos delay counter
+					$counter = 0;
 					while( $project_Query->have_posts() ) {
+	
 						$project_Query->the_post();
+
+						// increment by 100
+						$counter+=100
+						
 						?>
-						<article class="portfolio-item-container">
+
+						<article class="portfolio-item-container" data-aos="fade-up" data-aos-delay="<?php echo $counter ?>">
 
 							<div class="portfolio-content">
 								<h3><?php the_title() ?></h3>

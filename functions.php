@@ -48,8 +48,8 @@ We'll let WordPress add them to our templates automatically instead
 of writing our own link tags in the header. */
 
 function hackeryou_styles(){
+	wp_enqueue_style('aos', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
 	wp_enqueue_style('style', get_stylesheet_uri() );
-
 	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 	wp_enqueue_style('Poppins', 'https://fonts.googleapis.com/css?family=Poppins:400i,600,700');
 	wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css?family=Roboto');
@@ -75,6 +75,14 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'aos', //handle
+    "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js",
     false, //dependencies
     null, // version number
     true //load in footer
