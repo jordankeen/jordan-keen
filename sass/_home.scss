@@ -24,3 +24,8 @@ main {
 		font-size: 7vw;
 	}
 }
+@media screen and (max-width: 479px) {
+	main {
+		padding: 65px 24px;
+	}
+}
