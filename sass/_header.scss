@@ -4,7 +4,7 @@ header {
 	nav {
 		position: fixed;
 		z-index: 2;
-	    background-color: $black; 
+	    background-color: #3e3e3e; 
 	    width: 320px;
 	    bottom: 0;
 	    top: 0;
@@ -13,7 +13,6 @@ header {
 	    transition: all 0.35s ease-in-out;
 	    &.open {
 	    	right: 0;
-	    	// background-color: #e25353;
 	    }
 	}
 	.menu {
@@ -53,9 +52,6 @@ header {
 		span:nth-child(3) { margin-top: 6px; }
 		&.active {
 			position: fixed;
-			// top: 16.5px;
-			// right: 15px;
-			// z-index: 3;
 			span {
 				-webkit-transition: .35s margin, .35s transform .35s;
 				-moz-transition: .35s margin, .35s transform .35s;

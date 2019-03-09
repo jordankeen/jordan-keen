@@ -7,7 +7,6 @@
 get_header();  
 
 ?>
-
 	<div class="projects-page page-style">
 		<div class="container">
 			<h2 class="page-title">recent projects</h2>
@@ -23,18 +22,12 @@ get_header();
 					);
 				$project_Query = new WP_Query($projects_Args);
 				if( $project_Query->have_posts() ) {
-					// aos delay counter
-					$counter = 0;
 					while( $project_Query->have_posts() ) {
 	
 						$project_Query->the_post();
-
-						// increment by 100
-						$counter+=100
-						
 						?>
 
-						<article class="portfolio-item-container" data-aos="fade-up" data-aos-delay="<?php echo $counter ?>">
+						<article class="portfolio-item-container" data-aos="fade-up">
 
 							<div class="portfolio-content">
 								<h3><?php the_title() ?></h3>
@@ -50,8 +43,7 @@ get_header();
 									?>
 								</ul>
 
-								
-									<a class="view-live hvr-sweep-to-right" target="_blank" href="<?php the_field('project_link'); ?>">View Live</a>
+								<a class="view-live hvr-sweep-to-right" target="_blank" href="<?php the_field('project_link'); ?>">View Live</a>
 								
 							</div>
 

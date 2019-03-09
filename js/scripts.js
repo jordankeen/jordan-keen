@@ -1,17 +1,14 @@
 $(function(){
-
-	
-
+	// init for AOS animations
+	// https://michalsnik.github.io/aos/
 	AOS.init({
-		offset: 0, // offset (in px) from the original trigger point
-  		duration: 600, // values from 0 to 3000, with step 50ms);
+		offset: 200, 
+  		duration: 700, 
   		once: true
   	});
-
+	// open/close of nav
 	$('.menu-button').on('click', function() {
 		$(this).toggleClass('active');
 		$('nav').toggleClass('open');
 	});
-
-
 });

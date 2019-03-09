@@ -3,7 +3,6 @@
 </footer>
 
 <script>
-// scripts.js, plugins.js and jquery are enqueued in functions.php
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
