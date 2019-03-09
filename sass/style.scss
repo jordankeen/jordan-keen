@@ -55,6 +55,27 @@ body {
 	    left: -2%;
 	}
 }
+// 404 styling
+.not-found-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 41px);
+	.not-found-container {
+		text-align: center;
+		h1 {
+			margin: 0;
+			letter-spacing: 8px;
+		}
+		p {
+			line-height: 1.9;
+			letter-spacing: 2px;
+		}
+		a {
+			text-decoration: underline;
+		}
+	}
+}
 @media screen and (max-width: 991px) {
 	.page-style {
 		padding: 70px 15px;
