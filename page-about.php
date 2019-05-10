@@ -24,7 +24,7 @@ get_header();
 			</p>
 			<h3 class="about-subtitle">Things I'm learning:</h3>
 			<p class="about-copy">
-				React, Redux, node.js, mongoose, mongoDB
+				React, Redux, Node.js, Express.js, MongoDB
 			</p>
 		</div>
 	</div>
